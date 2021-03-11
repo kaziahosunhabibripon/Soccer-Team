@@ -7,15 +7,16 @@ const TeamDetails = (props) => {
     console.log(props.team);
     const {
         strTeam, strAlternate, idTeam,
-        strTeamBadge, strTeamBanner,
+        strTeamBadge, 
         strTwitter, strWebsite,
         strYoutube, strStadium,
         strFacebook, strDescriptionEN,
-        intFormedYear, strCountry, strGender, strInstagram, strLeague, strStadiumThumb
+        intFormedYear, strCountry, strGender, strInstagram, strLeague, strStadiumDescription
     } = props.team;
+    
     return (
         <div className="row m-0 p-0">
-            <img className="logo" src={strTeamBadge} alt="team-badge" />
+           <img className="logo" src={strTeamBadge} alt="team-badge"/>
             <div className="mid-part row">
                 <div className="col-sm-6 left-side">
                     <h3> {strAlternate}</h3>
@@ -32,7 +33,15 @@ const TeamDetails = (props) => {
             <div className="content-part ">
                 <h4>Team Details:</h4>
                 <p>  
-                    {strDescriptionEN}</p>
+                    {strDescriptionEN}
+                </p>
+                
+                <p>  
+                    {strStadiumDescription}
+                </p>
+            </div>
+            <div>
+                
             </div>
             <p> {strAlternate}</p>
             <p> {strTwitter}</p>
