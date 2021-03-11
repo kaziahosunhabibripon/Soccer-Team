@@ -1,0 +1,22 @@
+.main-container {
+    position: relative;
+    text-align: center;
+    margin:none;
+    padding:none;
+    color:rgba(17, 17, 17, 0.685);
+    
+  }
+.header-img{
+      width: 100%;
+      height:362px;  
+      opacity: 0.8; 
+}
+.centered {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    font-weight: bolder;
+    font-size:45px;
+  }
